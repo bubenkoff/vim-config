@@ -2,7 +2,7 @@ setup_dir=`pwd`
 
 # Install pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle; \
-    curl -so ~/.vim/autoload/pathogen.vim \
+    curl -o ~/.vim/autoload/pathogen.vim \
         https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
 
@@ -46,6 +46,20 @@ cd ~/.vim/bundle
 if ! [ -d "vim-colors-solarized" ]
 then
 	git clone git://github.com/altercation/vim-colors-solarized.git vim-colors-solarized
+fi
+
+# setup ctrlp
+cd ~/.vim/bundle
+if ! [ -d "vim-ctrlp" ]
+then
+   git clone https://github.com/kien/ctrlp.vim.git
+fi
+
+# setup nerdtree
+cd ~/.vim/bundle
+if ! [ -d "vim-nerdtree" ]
+then
+    git clone https://github.com/scrooloose/nerdtree
 fi
 
 # Set vimrc

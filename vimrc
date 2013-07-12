@@ -21,10 +21,12 @@ function! RotateEnc()
 endfunction
 
 call pathogen#infect()
-call pathogen#runtime_append_all_bundles()
+call pathogen#incubate()
 call pathogen#helptags()
 syntax on
 filetype plugin indent on
+
+autocmd vimenter * NERDTree
 
 " Set 4 spaces on tab
 set tabstop=4
