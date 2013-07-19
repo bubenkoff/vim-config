@@ -28,6 +28,8 @@ filetype plugin indent on
 
 "autocmd vimenter * NERDTree
 
+map <C-n> :NERDTreeToggle<CR>
+
 " Set 4 spaces on tab
 set tabstop=4
 set shiftwidth=4
