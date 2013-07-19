@@ -26,10 +26,11 @@ call pathogen#helptags()
 syntax on
 filetype plugin indent on
 
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 
 " Set 4 spaces on tab
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set number
+set list
